@@ -1124,7 +1124,7 @@ esp_err_t camera_init(const camera_config_t* config)
         int qp = config->jpeg_quality;
         int compression_ratio_bound = 1;
         if (qp > 10) {
-            compression_ratio_bound = 16;
+            compression_ratio_bound = 12;
         } else if (qp > 5) {
             compression_ratio_bound = 10;
         } else {
